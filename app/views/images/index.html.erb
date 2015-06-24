@@ -1,1 +1,7 @@
-<h1>Welcome Page!</h1>
+<h1>Images</h1>
+
+<% @images.each do |p|%>
+  <p><%= p.name %>, <%= p.description %></p>
+  <img src="<%= p.url %>">
+
+  <% end %>
